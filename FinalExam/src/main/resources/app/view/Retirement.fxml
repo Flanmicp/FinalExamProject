@@ -28,12 +28,12 @@
    <top>
       <HBox alignment="TOP_CENTER" prefHeight="45.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <Label text="Retirement Calculator" />
+            <Label prefHeight="51.0" prefWidth="115.0" text="Retirement Calculator" />
          </children>
       </HBox>
    </top>
    <center>
-      <GridPane BorderPane.alignment="CENTER">
+      <GridPane stylesheets="@Styling.css" BorderPane.alignment="CENTER">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -54,10 +54,10 @@
          <children>
             <Label text="Save Each Month" />
             <Label text="Years to Work" GridPane.rowIndex="1" />
-            <Label text="Working Annual Return (%)" GridPane.rowIndex="2" />
+            <Label text="Working Annual Return (Decimal)" GridPane.rowIndex="2" />
             <Label text="Amount You Need to Save" GridPane.rowIndex="4" />
             <Label text="Years Retired" GridPane.rowIndex="6" />
-            <Label text="Retired Annual Return (%)" GridPane.rowIndex="7" />
+            <Label text="Retired Annual Return (Decimal)" GridPane.rowIndex="7" />
             <Label text="Required Income" GridPane.rowIndex="8" />
             <Label text="Monthly SSI" GridPane.rowIndex="9" />
             <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="10">
@@ -84,6 +84,7 @@
             <TextField fx:id="txtAnnualReturnRetired" layoutX="210.0" layoutY="281.0" prefHeight="25.0" prefWidth="62.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
             <TextField fx:id="txtRequiredIncome" layoutX="210.0" layoutY="324.0" prefHeight="25.0" prefWidth="62.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
             <TextField fx:id="txtMonthlySSI" layoutX="210.0" layoutY="367.0" prefHeight="25.0" prefWidth="62.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Label prefHeight="62.0" prefWidth="200.0" GridPane.rowIndex="10" />
          </children>
       </GridPane>
    </center>
